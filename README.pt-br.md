@@ -31,8 +31,8 @@ Crie um arquivo .env na raiz do projeto
 ```bash
 ## Banco de dados
 DB_HOST='127.0.0.1'
-DB_NAME='sendgrid'
-DB_USER='postgres'
+DB_NAME='NOME_DO_SEU_BANCO'
+DB_USER='SEU_USUARIO_DO_BANCO'
 DB_PORT='5432'
 DB_PASS='SUA_SENHA'
 
