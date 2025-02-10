@@ -1,4 +1,6 @@
 # API de Autenticação com Node.js, React e SendGrid
+[![pt-br](https://img.shields.io/badge/language-pt--br-green.svg)](https://github.com/cardoso-m/frontend-sendgrid/blob/main/README.pt-br.md)
+[![en](https://img.shields.io/badge/language-en-orange.svg)](https://github.com/cardoso-m/frontend-sendgrid/blob/main/README.md)
 
 Esta é uma API de autenticação desenvolvida com **Node.js**, **React**, **PostgreSQL** e **SendGrid**. Ela contém três telas principais: **Signin**, **Signup** e **Validate**. O objetivo da aplicação é permitir que os usuários se cadastrem, confirmem o e-mail e sejam adicionados ao banco de dados.
 
