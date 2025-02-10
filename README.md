@@ -8,7 +8,7 @@ Esta é uma API de autenticação desenvolvida com **Node.js**, **React**, **Pos
 
 ```bash
 git clone https://github.com/cardoso-m/frontend-sendgrid
-git clone https://github.com/cardoso-m/backend-sendgrid.git
+git clone https://github.com/cardoso-m/backend-sendgrid
 ```
 
 ### 2. Instale as Dependências do Backend
@@ -66,10 +66,16 @@ npm run dev
 
 **Frontend**
 
-Em outro terminal, vá para o diretório do frontend e inicie a aplicação:
+Primeiro, instale as dependências no diretório do frontend:
 
 ```bash
 cd frontend
+npm install
+```
+
+Depois, inicie a aplicação frontend:
+
+```bash
 npm run dev
 ```
 
