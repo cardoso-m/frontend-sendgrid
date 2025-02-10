@@ -23,7 +23,7 @@ npm install
 ### 3. Crie o Arquivo `.env`
 
 ```bash
-Crie um arquivo .env
+Crie um arquivo .env na raiz do projeto
 ```
 
 #### Abra o arquivo `.env` e adicione as seguintes configurações:
@@ -33,7 +33,7 @@ Crie um arquivo .env
 DB_HOST='127.0.0.1'
 DB_NAME='sendgrid'
 DB_USER='postgres'
-DB_PORT='3000' || '5432'
+DB_PORT='5432'
 DB_PASS='SUA_SENHA'
 
 ## SendGrid
