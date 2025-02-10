@@ -16,7 +16,7 @@ git clone https://github.com/cardoso-m/backend-sendgrid
 ### 2. Install Backend Dependencies
 
 ```bash
-cd backend
+cd backend-sendgrid
 npm install
 ```
 
@@ -33,7 +33,7 @@ touch .env
 DB_HOST='127.0.0.1'
 DB_NAME='sendgrid'
 DB_USER='postgres'
-DB_PORT='3000'
+DB_PORT='3000' || '5432'
 DB_PASS='YOUR_PASSWORD'
 
 ## SendGrid
@@ -41,11 +41,11 @@ EMAIL='YOUR_EMAIL'
 SENDGRID_API_KEY='YOUR_API_KEY'
 ```
 
-> **Note:** Generate your key on SendGrid at [https://sendgrid.com/](https://sendgrid.com/).
+> **Note:** Generate your key in SendGrid at [https://sendgrid.com/](https://sendgrid.com/).
 
 ### 4. Database Setup
 
-- Access **pgAdmin** and create a database called `sendgrid`.
+- Access **pgAdmin** and create a database named `sendgrid`.
 - Fill in the credentials in the `.env` file as shown above.
 
 ### 5. SendGrid Setup
@@ -61,7 +61,6 @@ SENDGRID_API_KEY='YOUR_API_KEY'
 For the backend, run the following commands in the terminal:
 
 ```bash
-cd backend
 npm run migrate
 npm run dev
 ```
@@ -71,7 +70,7 @@ npm run dev
 First, install the dependencies in the frontend directory:
 
 ```bash
-cd frontend
+cd frontend-sendgrid
 npm install
 ```
 
@@ -87,8 +86,6 @@ npm run dev
 
 The application has three main routes:
 
-- **/signin**: Where the user enters their name, email, and password.
-- **/signup**: Registration screen with the option to "Sign Up".
+- **/signin**: Where the user adds their name, email, and password.
+- **/signup**: Registration screen with the option to "Register".
 - **/validate**: Screen to enter the code sent to the email.
-
-After registering at the `/signin` route, a verification code will be sent to the provided email. The user needs to enter the code at the `/validate` route to complete the registration and be added to the database.
