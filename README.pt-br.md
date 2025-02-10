@@ -16,14 +16,14 @@ git clone https://github.com/cardoso-m/backend-sendgrid
 ### 2. Instale as Dependências do Backend
 
 ```bash
-cd backend
+cd backend-sendgrid
 npm install
 ```
 
 ### 3. Crie o Arquivo `.env`
 
 ```bash
-touch .env
+Crie um arquivo .env
 ```
 
 #### Abra o arquivo `.env` e adicione as seguintes configurações:
@@ -33,7 +33,7 @@ touch .env
 DB_HOST='127.0.0.1'
 DB_NAME='sendgrid'
 DB_USER='postgres'
-DB_PORT='3000'
+DB_PORT='3000' || '5432'
 DB_PASS='SUA_SENHA'
 
 ## SendGrid
@@ -61,7 +61,6 @@ SENDGRID_API_KEY='SUA_API_KEY'
 Para o backend, execute os seguintes comandos no terminal:
 
 ```bash
-cd backend
 npm run migrate
 npm run dev
 ```
@@ -71,7 +70,7 @@ npm run dev
 Primeiro, instale as dependências no diretório do frontend:
 
 ```bash
-cd frontend
+cd frontend-sendgrid
 npm install
 ```
 
@@ -91,4 +90,4 @@ A aplicação possui três rotas principais:
 - **/signup**: Tela de cadastro com a opção de "Cadastrar".
 - **/validate**: Tela para inserir o código enviado ao e-mail.
 
-Após o cadastro na rota `/signin`, um código de verificação será enviado para o e-mail informado. O usuário precisa inserir o código na rota `/validate` para completar o cadastro e ser adicionado ao banco de dados.
+Após o cadastro na rota `/signup`, um código de verificação será enviado para o e-mail informado. O usuário precisa inserir o código na rota `/validate` para completar o cadastro e ser adicionado ao banco de dados.
