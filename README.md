@@ -29,6 +29,7 @@ Create a .env file in the root of the project
 #### Open the `.env` file and add the following configurations:
 
 ```bash
+## Database
 DB_HOST='127.0.0.1'
 DB_NAME='YOUR_DATABASE_NAME'
 DB_USER='YOUR_DATABASE_USER'
