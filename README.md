@@ -23,17 +23,16 @@ npm install
 ### 3. Create the `.env` File
 
 ```bash
-touch .env
+Create a .env file in the root of the project
 ```
 
 #### Open the `.env` file and add the following configurations:
 
 ```bash
-## Database
 DB_HOST='127.0.0.1'
-DB_NAME='sendgrid'
-DB_USER='postgres'
-DB_PORT='3000' || '5432'
+DB_NAME='YOUR_DATABASE_NAME'
+DB_USER='YOUR_DATABASE_USER'
+DB_PORT='5432'
 DB_PASS='YOUR_PASSWORD'
 
 ## SendGrid
@@ -41,7 +40,7 @@ EMAIL='YOUR_EMAIL'
 SENDGRID_API_KEY='YOUR_API_KEY'
 ```
 
-> **Note:** Generate your key in SendGrid at [https://sendgrid.com/](https://sendgrid.com/).
+> **Note:** Generate your key on SendGrid at [https://sendgrid.com/](https://sendgrid.com/).
 
 ### 4. Database Setup
 
@@ -86,6 +85,8 @@ npm run dev
 
 The application has three main routes:
 
-- **/signin**: Where the user adds their name, email, and password.
+- **/signin**: Where the user enters their name, email, and password.
 - **/signup**: Registration screen with the option to "Register".
 - **/validate**: Screen to enter the code sent to the email.
+
+After registering at the `/signup` route, a verification code will be sent to the provided email. The user needs to enter the code at the `/validate` route to complete the registration and be added to the database.
